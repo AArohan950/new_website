@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>Tech fest 2026</h1>
+    </header>
+    
+    <hr>
+    <nav>
+    
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html">Register</a>
+    
+    </nav>
+    <hr>
+
+    <main>
+        <section>
+            
+            <h1>Register</h1>
+            <fieldset>
+                <legend>Registration Form</legend>
+                <form action="submit_registration.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" 
+                placeholder="Enter your name" required ><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" 
+                placeholder="Enter your email"  required><br><br>
+
+                <label for="event">Select Event:</label><br>
+                <select id="event" name="event" required>
+                    <option value="">--Please choose an event--</option>
+                    <option value="code_competition">Code Competition</option>
+                    <option value="web_design_challenge">Web Design Challenge</option>
+                </select><br><br>
+                <label for="Comments">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"
+                placeholder="Enter any additional information"></textarea>
+
+                <button type="submit">submit</button>
+
+                
+
+            </form>
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>
